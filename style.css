@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("https://i.ytimg.com/vi/Rlh_uhuCSp8/maxresdefault.jpg");
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 52px;
+    font-size: 21px;
+    display: flex;
+    align-items: center; /*Through these it will come in center of y axis*/
+    text-align: center;
+    justify-content: center;
+    padding: 0 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+nav ul li{
+    list-style-type: none;
+}
+.gamecontainer{
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+.container{
+    display: grid;
+    grid-template-rows:repeat(3,10vw);
+    grid-template-columns:repeat(3,10vw);
+    font-family: cursive;
+    
+}
+.box{
+    border: 2px solid rgb(110, 248, 140);
+    box-shadow: 3px 3px rgb(244, 141, 15);
+    font-size: 7.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+}
+h1{
+    color: rgb(244, 244, 15);
+}
+.box:hover{
+    cursor: pointer;
+    background-color: darkorange;
+}
+.gameinfo{
+    margin: 5px 35px;
+    font-family: cursive;
+}
+.info{
+    font-size: 34px;
+    font-family: cursive;
+    background-color: rgb(247, 9, 9);
+    color: rgb(229, 236, 229);
+    text-shadow: 2px 2px rgb(94, 4, 4);
+}
+.info:hover{
+    cursor: pointer;
+
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    margin: 40px 70px ;
+    padding: 4px 4px;
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: cursive;
+
+}
+@media screen and (min-width:355px) and (max-width:550px){
+    .gamecontainer{
+        flex-wrap: wrap;
+        font-size: 2.5vw;
+    }
+    nav{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #reset{
+        margin: 28px 72px;
+    }
+    h1{
+        margin: 10px 10px;
+        padding: 5px 5px;
+        text-shadow: 2px 2px rgb(232, 97, 97);
+    }
+    .info{
+        margin: 10px 4px;
+    }
+
+}
+@media screen and (min-width:205px) and (max-width:340px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 12px;
+        margin: 10px 10px;
+        text-shadow: 2px 2px red;
+    }
+    .info{
+        margin: 5px 55px;
+        font-size: 4vw;
+    }
+    #reset{
+        margin: 5px 55px;
+        font-size: 4vw;
+    }
+    nav{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
